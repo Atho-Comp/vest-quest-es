@@ -7,6 +7,12 @@
     <title>home</title>
 </head>
 <body>
-    
+    <form action="" method="post">
+        {% csrf_token  %}
+        <input type="text" placeholder="nome" name="nome">
+        <input type="text" placeholder="sobrenome" name="sobrenome">
+        <input type="email" placeholder="email" name="email">
+        <input type="submit" value="enviar">
+    </form>
 </body>
 </html>
