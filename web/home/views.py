@@ -10,7 +10,11 @@ def index(request):
     sobrenome = request.POST.get('sobrenome')
     email = request.POST.get('email')
 
-    return render(request, 'home/index.html')
+    print(nome, email)
+
+    return render(request, 'home/index.html', {
+        'nome': nome
+    })
 
 def perguntas(request):
     return HttpResponse('pagina perguntas')
