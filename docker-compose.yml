@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  db:
+    image: 'mysql'
+    volumes:
+      - db_vest_quesotes:/var/lib
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'vestquestoes'
+       MYSQL_ROOT_PASSWORD: 'root'
+
+  web:
+    build: ./web
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./web:/app
+    depends_on: 
+      - db
+    
+
+volumes:
+  db_vest_quesotes: {}
