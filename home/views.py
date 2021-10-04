@@ -9,8 +9,6 @@ def index(request):
     nome = request.POST.get('nome')
     sobrenome = request.POST.get('sobrenome')
     email = request.POST.get('email')
-    
-    print(nome, sobrenome, email)
 
     return render(request, 'home/index.html')
 
