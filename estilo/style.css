@@ -147,6 +147,9 @@ form input#cadastrar {
   color: var(--cor-neutra);
   margin: 5px 10px 50px 10px;
 }
+form input#cadastrar:hover {
+  background-color: var(--cor-escura);
+}
 
 
 
