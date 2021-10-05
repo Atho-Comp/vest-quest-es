@@ -1,21 +1,36 @@
-
-{% extends 'base.html' %}
-{% load static %}
-
-
-{% block 'content_body' %}
-    
-<div id="banner">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vest Questões</title>
+  <link rel="stylesheet" href="../estilo/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../images/logo 3.png" alt="Logo Vest Questões">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="#NL">NewsLeatter</a>
+      <a href="#CTT">Contatos</a>
+      <a href="questoes.html" id="questoes" target="_blank">Questões</a>
+    </div>
+  </header>
+  <div id="banner">
     <picture></picture>
   </div>
   <main>
     <div id="container1">
-      <img src=" {% static '/images/estudante1.png' %} " alt="Estudante 1" id="estudante1">
+      <img src="../images/estudante1.png" alt="Estudante 1" id="estudante1">
       <h1>LOREM</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, veniam cumque porro dicta impedit vero distinctio pariatur consectetur magnam. Maxime, veritatis? Delectus temporibus eligendi eaque quae adipisci, labore sequi modi?</p>
     </div>
     <div id="container2">
-      <img src=" {% static '/images/estudante2.png' %} " alt="Estudante 2" id="estudante2">
+      <img src="../images/estudante2.png" alt="Estudante 2" id="estudante2">
       <div class="conteudo">
         <h1>LOREM</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio debitis, voluptate ipsa, quae harum ipsum perspiciatis totam facere maxime eveniet tenetur hic doloribus eaque nisi neque laboriosam alias exercitationem! Illo.</p>
@@ -31,5 +46,8 @@
       <input type="submit" value="CADASTRAR" id="cadastrar">
     </form>
   </section>
+  <footer>
     
-{% endblock %}
+  </footer>
+</body>
+</html>
