@@ -59,7 +59,7 @@ header .menu #questoes:hover {
 
 /*##DIV DO BANNER*/
 div#banner {
-  height: 450px;
+  height: 500px;
   /*n lembro da shorthand*/
   background-color: var(--cor-escura);
   background-image: url('../images/banner.png');
@@ -160,4 +160,91 @@ footer {
   background-color: var(--cor-escura);
   width: 100%;
   height: 150px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  main {
+    color: var(--cor-contraste);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 20px;
+    gap: 70px;
+  }
+  main img {
+    width: 100%;
+  }
+  main h1 {
+    font-weight: 900;
+    font-size: 50px;
+  }
+  main p {
+    width: 450px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  main #container1 #estudante1 {
+    margin-bottom: 180px;
+  }
+  main #container2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main #container2 #estudante2 {
+    margin-top: 180px;
+  }
+
+  header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .menu a {
+    display: block;
+    color: var(--cor-contraste);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+
+  section {
+    margin: 100px 0;
+    width: 100%;
+    border-top: 1px solid #34363349;
+    border-bottom: 1px solid #34363349;
+  }
+
+
+  form {
+    padding: 20px 30px;
+  }
+
+  form input {
+    font-weight: 600;
+    border: none;
+    background-color: #34363311;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  form input#email {
+    width: 100%;
+  }
+  form input#cadastrar {
+    background-color: var(--cor-padrao);
+    color: var(--cor-neutra);
+    margin: 5px 10px 50px 10px;
+  }
+  form input#cadastrar:hover {
+    background-color: var(--cor-escura);
+  }
+
 }
