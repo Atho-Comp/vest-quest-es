@@ -65,7 +65,7 @@ header .menu #questoes:hover {
 div#banner {
   height: 450px;
   /*n lembro da shorthand*/
-  background-image: url(../images/banner.png);
+  background-image: url(images/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
