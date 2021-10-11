@@ -1,2 +1,6 @@
-# Vest Questões <br>
-É um projeto de um Website criado para Vestibulandos na missão de filtrar ou destacar as questões que são sempre discutidas, tornando um rápido e confortável acesso a todas as suas dúvidas
+# Vest Questões
+
+**Um site criado de _estudantes_ para _estudantes._** <br><br>
+O nosso foco é a agilidade e perfeição. No Vest Questões você acha qualquer um dos seus exercícios com conforto e eficácia jamais vista
+
+**Status do projeto:** Em desenvolvimento...
