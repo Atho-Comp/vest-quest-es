@@ -9,5 +9,4 @@ def index(request):
     last_name = request.POST.get('lastname')
     email = request.POST.get('email')
 
-    print(name, last_name, email)
     return render(request, 'home/index.html')
