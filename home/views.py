@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import User
 
 # Create your views here.
 def index(request):
@@ -8,5 +9,13 @@ def index(request):
     name = request.POST.get('name')
     last_name = request.POST.get('lastname')
     email = request.POST.get('email')
+
+    user = User(
+        name=name,
+        last_name=last_name,
+        email=email,
+    )
+
+    user.save()
 
     return render(request, 'home/index.html')
