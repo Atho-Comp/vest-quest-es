@@ -16,6 +16,13 @@ def index(request):
         email=email,
     )
 
+    if User.objects.filter(email=email).exists():
+        return render(request, 'home/index.html', {
+            'enviado': False,
+        })
+
     user.save()
 
-    return render(request, 'home/index.html')
+    return render(request, 'home/index.html', {
+        'enviado': True,
+    })
