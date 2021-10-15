@@ -1,7 +1,9 @@
+{% load static %}
+
 <header>
     <div class="logo">
-      <a href="index.html">
-        <img src="images/logo 3.png" alt="Logo Vest Questões">
+      <a href=" {% url 'index' %} ">
+        <img src="{% static 'images/logo 3.png' %}" alt="Logo Vest Questões">
       </a>
     </div>
     <div class="menu">
