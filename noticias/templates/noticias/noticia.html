@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block 'content_body' %}
+
+    <img src=" {{ noticia.url_image }} " alt="" class="image_header">
+
+    <div class="container">
+        <div class="noticia">
+            <hgroup>
+                <h1 class="title">{{ noticia.title }}</h1>            
+                <h2 class="subtitle">{{ noticia.subtitle }}</h2>
+            </hgroup>
+
+            <p class="text">{{ noticia.text_body }}</p>
+        </div>
+    </div>
+
+
+{% endblock %}

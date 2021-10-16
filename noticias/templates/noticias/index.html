@@ -3,8 +3,19 @@
 {% block 'content_body' %}
 
     <div class="container">
-        <h1>Ola mundo</h1>
+        <h1>noticias</h1>
 
+        {% for noticia in noticias %}
+            <div class="box-noticia">
+                
+                <h1>{{ noticia.title }}</h1>            
+                <h2>{{ noticia.subtitle }}</h2>
+                <h3>{{ noticia.id }}</h3>
+
+                <a href="{% url 'noticia_page' noticia.id %}">leia mais</a>
+            </div>
+
+        {% endfor %}
     </div>
 
 

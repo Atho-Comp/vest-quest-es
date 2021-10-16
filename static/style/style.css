@@ -184,9 +184,37 @@ footer .box-foot {
 }
 
 
+/* PAGINA DE NOTICIAS */
+.image_header {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.noticia .title {
+  font-size: 3rem;
+  color: var(--cor-contraste);
+}
+
+.noticia .subtitle {
+  font-size: 1.5rem;
+  color: #4b4d4a;
+}
+
+.noticia hgroup {
+  margin: 30px 0;
+}
+
+.noticia .text {
+  line-height: 35px;
+  padding: 20px 0;
+  font-size: 1.3rem;
+}
+
+
+
 
 /*##MEDIA QUERIES*/
-
 @media screen and (max-width: 1010px) {
   
   * {
