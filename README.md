@@ -5,4 +5,4 @@ Vest questões é um site feito para o portifolio da Atho, o projeto tem como ob
 As tecnologias usadas no projeto são:
 - HTML/CSS/JS
 - Django
-- MySQL 
+- SQlite
