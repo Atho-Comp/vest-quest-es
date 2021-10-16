@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block 'content_body' %}
+
+    <div class="container">
+        <h1 class="title-noticia">Noticias</h1>
+
+        <div class="noticias">
+            {% for noticia in noticias %}
+                <div class="box-noticia">
+                    
+                    <img src=" {{ noticia.url_image }} " alt="">            
+                    <h1 class="title-box">{{ noticia.title }}</h1>            
+                    <h2 class="subtitle-box">{{ noticia.subtitle }}</h2>
+    
+                    <a href="{% url 'noticia_page' noticia.id %}">leia mais</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
