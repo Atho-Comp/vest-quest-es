@@ -6,3 +6,4 @@ As tecnologias usadas no projeto são:
 - HTML/CSS/JS
 - Django
 - SQlite
+
